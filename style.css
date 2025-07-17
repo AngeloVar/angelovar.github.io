@@ -1,0 +1,67 @@
+img{
+    display: block;
+
+    /* Centers Img */
+    margin: auto;
+
+    /* Adds space above and below Img */
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.navbar ul{
+    /* Gets rid of list bullet points */
+    list-style-type: none;
+
+    /* Changes background color of list elements */
+    background-color: rgb(255, 255, 255);
+
+    /* Removes any padding and margins */
+    padding: 0px;
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.navbar a{
+    /* Changes the color of the text */
+    color: rgb(0, 0, 0);
+
+    /* Removes underlines of list elements */
+    text-decoration: none;
+
+    /* Adds some padding */
+    padding: 15px;
+
+    /* Displays list as a block */
+    display: block;
+
+    /* Centers text */
+    text-align: center;
+}
+
+.navbar a:hover{
+    /* Changes the color of the text when hovered on */
+    color: #ff3131;
+}
+
+.navbar li{
+    /* Adds some padding to each listed item */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.list-container{
+    /* Centers Navigation Bar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.horizontal-list {
+    /* Makes Navigation Bar Horizontal */
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
