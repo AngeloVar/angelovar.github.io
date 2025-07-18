@@ -1,3 +1,7 @@
+:root{
+    --darkOrange: #ff3131
+}
+
 img{
     display: block;
 
@@ -38,11 +42,32 @@ img{
 
     /* Centers text */
     text-align: center;
+
+    /* Changes Font and Font size of NavBar elements */
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--darkOrange);
+    margin-top: 10px;
+    transition: all ease-in-out 250ms;
+}
+
+.navbar a:hover::after{
+    width: 5%;
 }
 
 .navbar a:hover{
     /* Changes the color of the text when hovered on */
-    color: #ff3131;
+    color: var(--darkOrange);
 }
 
 .navbar li{
@@ -56,7 +81,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 }
 
 .horizontal-list {
