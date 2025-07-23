@@ -78,7 +78,7 @@
     position: absolute;
     display: block;
     height: 0.4em;
-    width: 0%;
+    min-width: 0%;
     background-color: var(--darkOrange);
     margin-top: 10px;
     transition: all ease-in-out 250ms;
@@ -86,7 +86,7 @@
 
 #navbar a:hover::after{
     /* Controls how long animated bar is */
-    width: 4%;
+    min-width: 5%;
 }
 
 #navbar a:hover{
@@ -117,8 +117,42 @@
     top: 0%;
 }
 
-@media screen and (max-width:700px) {
-    
+@media screen and (max-width:1200px) {
+    #navbar{
+        position: sticky;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 10;
+        background-color: aquamarine;
+    }
+
+    #navbar a{
+        text-align: left;
+    }
+
+    .list-container{
+        display: flex;
+        flex-direction: column;
+        background-color: blueviolet;
+        width: 500px;
+    }
+
+    .horizontal-list{
+        display: inline-block;
+    }
+
+    #logo{
+        height: 80px;
+    }
+
+    #flex-container{
+        text-align: left;
+    }
+
+    #navbar a:hover::after{
+        width: 30%;
+    }
 }
 
 main{
