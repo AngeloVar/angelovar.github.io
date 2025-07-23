@@ -1,19 +1,40 @@
+/* Makes dark orange color hexcode into a variable */
 :root{
     --darkOrange: #ff3131
 }
 
-img{
-    display: block;
-
-    /* Centers Img */
-    margin: auto;
-
-    /* Adds space above and below Img */
-    padding-top: 1%;
-    padding-bottom: 1%;
+/* Makes peach color hexcode into a variable */
+:root{
+    --peachCream: #ffe9db
 }
 
-.navbar ul{
+/* LOGO ADJUSTMENTS */
+#logo-link{
+    cursor: pointer;
+}
+
+#logo{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#flex-container {
+    text-align: center;
+    height: 135px;
+    transition: 0s;
+}
+
+/* BANNER ADJUSTMENTS */
+#banner{
+    display: block;
+    background-color: white;
+    padding: 25px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 0px rgb(221, 221, 221);
+    transition: 0.6s;
+}
+
+#navbar ul{
     /* Gets rid of list bullet points */
     list-style-type: none;
 
@@ -22,12 +43,12 @@ img{
 
     /* Removes any padding and margins */
     padding: 0px;
-    margin: auto;
+    margin: 0px;
 
     overflow: hidden;
 }
 
-.navbar a{
+#navbar a{
     /* Changes the color of the text */
     color: rgb(0, 0, 0);
 
@@ -35,7 +56,7 @@ img{
     text-decoration: none;
 
     /* Adds some padding */
-    padding: 15px;
+    padding: 20px;
 
     /* Displays list as a block */
     display: block;
@@ -45,12 +66,14 @@ img{
 
     /* Changes Font and Font size of NavBar elements */
     font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 
+    cursor: pointer;
 }
 
-.navbar a::after{
+/* Creates a bar below navbar elements and animates it */
+#navbar a::after{
     content: '';
     position: absolute;
     display: block;
@@ -61,19 +84,14 @@ img{
     transition: all ease-in-out 250ms;
 }
 
-.navbar a:hover::after{
-    width: 5%;
+#navbar a:hover::after{
+    /* Controls how long animated bar is */
+    width: 4%;
 }
 
-.navbar a:hover{
+#navbar a:hover{
     /* Changes the color of the text when hovered on */
     color: var(--darkOrange);
-}
-
-.navbar li{
-    /* Adds some padding to each listed item */
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .list-container{
@@ -81,6 +99,9 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5px;
+    margin-right: 0px;
+    
 }
 
 .horizontal-list {
@@ -88,4 +109,22 @@ img{
     display: flex;
     list-style: none;
     gap: 25px;
+}
+
+/* Makes Header stick to the top of the website when you scroll */
+.sticky {
+    position: sticky;
+    top: 0%;
+}
+
+@media screen and (max-width:700px) {
+    
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+}
+
+body{
+    margin: 0px;
 }

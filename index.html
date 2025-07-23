@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links to reset css file, which  -->
+        <link rel="stylesheet" href="reset.css">
         
         <!-- Font API link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,30 +22,100 @@
         <!-- Makes this image the favicon of website -->
         <link rel="icon" type="image/png" href="VPE_Icon_Logo.png">
 
+
     </head>
     
     <body>
-        <header>
-            <!-- Adds Company Logo to Website -->
-            <img src="VPE_Logo.png"
-            height="125px"
-            alt="This is the Official Logo of Varillas Precision Electronics.">
-
-            <!-- Adds a Navigation Bar to Website -->
-            <nav class="navbar">
-                <div class="list-container">
-                    <ul class="horizontal-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="order.html">Order</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+        <!-- HEADER OF HOME PAGE-->
+        <header class="sticky">
+            <!-- Adds a banner to the navbar -->
+            <div id="banner">
+                <!-- Adds Company Logo to Website -->
+                <div id="flex-container">
+                    <a href="https://varillasprecisionelectronics.org/" id="logo-link">
+                        <img src="VPE_Logo.png"
+                        height="135"
+                        id="logo"
+                        alt="This is the Official Logo of Varillas Precision Electronics.">
+                    </a>
                 </div>
-            </nav>
+
+                <!-- Adds a Navigation Bar to Website -->
+                <nav id="navbar">
+                    <div class="list-container" id="list">
+                        <ul class="horizontal-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
         </header>
 
+        <script>
+            const myImage = document.getElementById('logo');
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                    // Adds a box shadow when you scroll down
+                    document.getElementById("banner").style.boxShadow = "3px 3px 5px rgb(221, 221, 221)";
+
+                    // Makes nav bar banner smaller when you scroll down
+                    document.getElementById("banner").style.padding = "15px";
+
+                    // Makes logo image align to the left when you scroll down
+                    document.getElementById("flex-container").style.textAlign = "left";
+
+                    
+                    document.getElementById("flex-container").style.height = "10px";
+
+                    document.getElementById("logo").style.marginLeft = "150px";
+
+                    document.getElementById("logo").style.marginTop = "0px";
+
+                    // Makes logo image smaller when you scroll down
+                    myImage.height = 75;
+
+                   document.getElementById("list").style.alignItems = "end";
+
+                   document.getElementById("list").style.marginRight = "150px";
+                } 
+                else {
+                    // Takes away box shadow when you scroll all the way up
+                    document.getElementById("banner").style.boxShadow = "0px 0px 0px rgb(221, 221, 221)";
+
+                    // Makes nav bar banner bigger when you scroll all the way up
+                    document.getElementById("banner").style.padding = "25px";
+
+                    // Makes logo image align to the center when you scroll all the way up
+                    document.getElementById("flex-container").style.textAlign = "center";
+
+                    document.getElementById("flex-container").style.height = "135px";
+
+                    document.getElementById("logo").style.marginLeft = "0px";
+
+                    document.getElementById("logo").style.marginTop = "0px";
+
+                    // Makes logo image bigger when you scroll all the way up
+                    myImage.height = 135;
+
+                    document.getElementById("list").style.alignItems = "center";
+
+                    document.getElementById("list").style.marginRight = "0px";
+                }
+            }
+        </script>
+
+        <!-- MAIN CONTENT OF HOME PAGE -->
         <main>
+
+            <br>
 
             <h2>Precision Transimpedance Amplifiers</h2>
             <p>Lab-grade signal amplification for photodiodes, NV centers, and optical sensors</p>
@@ -76,22 +149,91 @@
 
         </main>
 
+        <!-- FOOTER OF HOME PAGE -->
         <footer>
 
         </footer>
 
-    </body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
+    </body>
          <hr>
 
      <div style="text-align: center;">
-  <p> <b>Contact Information </b>
-    <br>
-    <br>
-    <b>Phone:</b> (839) 268-9555
-    <br>
-   <b> Email:</b> sales@varillasprecisionelectronics.org
-    <br>
-  </p>
-</div>
+        <p> <b>Contact Information </b>
+            <br>
+            <br>
+            <b>Phone:</b> (839) 268-9555
+            <br>
+            <b> Email:</b> sales@varillasprecisionelectronics.org
+            <br>
+        </p>
+     </div>
 </html>
