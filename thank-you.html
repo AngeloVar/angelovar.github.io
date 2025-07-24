@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf7ea;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #28a745;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank you!</h1>
+  <p>Your message has been sent. We’ll be in touch shortly.</p>
+
+  <!-- Optional: Google Ads conversion tracking -->
+  <!-- Replace AW-CONVERSION_ID with your real Ads/Analytics ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-CONVERSION_ID'
+    });
+  </script>
+
+</body>
+</html>

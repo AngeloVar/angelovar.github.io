@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="https://formsubmit.io/send/Angelo@varillasprecisionelectronics.org" method="POST">
+      <input name="_redirect" type="hidden" value="https://varillasprecisionelectronics.org/thank-you.html">
+      <input name="_captcha" type="hidden" value="false">
+
+      <label for="name">What is your first and last name?</label>
+      <input type="text" name="Full Name" id="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" name="Email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="Phone" id="phone">
+
+      <label for="product">I am interested in the following product</label>
+      <select name="Product Interest" id="product" required>
+        <option value="">-- Select a product --</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (500khz)</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (5Mhz)</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (10Mhz)</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (50Mhz)</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
