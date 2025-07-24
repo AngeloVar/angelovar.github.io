@@ -25,7 +25,7 @@
       margin-top: 15px;
       font-weight: bold;
     }
-    input, select, textarea {
+    input, select {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -53,9 +53,9 @@
 
   <div class="container">
     <h1>Contact Us</h1>
-    <form action="https://formsubmit.io/send/Angelo@varillasprecisionelectronics.org" method="POST">
-      <input name="_redirect" type="hidden" value="https://varillasprecisionelectronics.org/thank-you.html">
-      <input name="_captcha" type="hidden" value="false">
+    <form action="https://formsubmit.io/send/angelo@varillasprecisionelectronics.org" method="POST">
+      <input type="hidden" name="_redirect" value="https://varillasprecisionelectronics.org/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
 
       <label for="name">What is your first and last name?</label>
       <input type="text" name="Full Name" id="name" required>
@@ -66,13 +66,10 @@
       <label for="phone">Phone Number</label>
       <input type="tel" name="Phone" id="phone">
 
-      <label for="product">I am interested in the following product</label>
+      <label for="product">I am interested in the following product:</label>
       <select name="Product Interest" id="product" required>
         <option value="">-- Select a product --</option>
-        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (500khz)</option>
-        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (5Mhz)</option>
-        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (10Mhz)</option>
-        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (50Mhz)</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (Standard)</option>
         <option value="Other">Other</option>
       </select>
 
