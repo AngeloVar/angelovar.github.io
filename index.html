@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="style.css">
 
         <!-- Makes this image the favicon of website -->
-        <link rel="icon" type="image/png" href="VPE_Icon_Logo.png">
+        <link rel="icon" type="image/png" href="VPE_FAVICON_Logo.png">
 
 
     </head>
@@ -33,8 +33,8 @@
                 <!-- Adds Company Logo to Website -->
                 <div id="flex-container">
                     <a href="https://varillasprecisionelectronics.org/" id="logo-link">
-                        <img src="VPE_Logo.png"
-                        height="135"
+                        <img src="VPE_BIG_LOGO.png"
+                        height="150px"
                         id="logo"
                         alt="This is the Official Logo of Varillas Precision Electronics.">
                     </a>
@@ -65,46 +65,55 @@
                     document.getElementById("banner").style.boxShadow = "3px 3px 5px rgb(221, 221, 221)";
 
                     // Makes nav bar banner smaller when you scroll down
-                    document.getElementById("banner").style.padding = "15px";
+                    document.getElementById("banner").style.paddingTop = "10px";
 
                     // Makes logo image align to the left when you scroll down
                     document.getElementById("flex-container").style.textAlign = "left";
 
-                    
-                    document.getElementById("flex-container").style.height = "10px";
+                    //
+                    document.getElementById("flex-container").style.height = "0px";
 
+                    //
                     document.getElementById("logo").style.marginLeft = "150px";
 
-                    document.getElementById("logo").style.marginTop = "0px";
-
                     // Makes logo image smaller when you scroll down
-                    myImage.height = 75;
+                    myImage.height = 70;
 
-                   document.getElementById("list").style.alignItems = "end";
+                    //
+                    myImage.src = 'VPE_SMALL_LOGO.png';
 
-                   document.getElementById("list").style.marginRight = "150px";
+                    //
+                    document.getElementById("list").style.alignItems = "end";
+
+                    //
+                    document.getElementById("list").style.marginRight = "150px";
                 } 
                 else {
                     // Takes away box shadow when you scroll all the way up
                     document.getElementById("banner").style.boxShadow = "0px 0px 0px rgb(221, 221, 221)";
 
                     // Makes nav bar banner bigger when you scroll all the way up
-                    document.getElementById("banner").style.padding = "25px";
+                    document.getElementById("banner").style.paddingTop = "40px";
 
                     // Makes logo image align to the center when you scroll all the way up
                     document.getElementById("flex-container").style.textAlign = "center";
 
-                    document.getElementById("flex-container").style.height = "135px";
+                    //
+                    document.getElementById("flex-container").style.height = "150px";
 
+                    //
                     document.getElementById("logo").style.marginLeft = "0px";
 
-                    document.getElementById("logo").style.marginTop = "0px";
-
                     // Makes logo image bigger when you scroll all the way up
-                    myImage.height = 135;
+                    myImage.height = 150;
 
+                    //
+                    myImage.src = 'VPE_BIG_LOGO.png';
+
+                    //
                     document.getElementById("list").style.alignItems = "center";
 
+                    //
                     document.getElementById("list").style.marginRight = "0px";
                 }
             }

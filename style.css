@@ -1,11 +1,7 @@
-/* Makes dark orange color hexcode into a variable */
+/* Makes color hexcodes into a variables */
 :root{
-    --darkOrange: #ff3131
-}
-
-/* Makes peach color hexcode into a variable */
-:root{
-    --peachCream: #ffe9db
+    --darkBlue: #004aad;
+    --softCyan: #5de0e6;
 }
 
 /* LOGO ADJUSTMENTS */
@@ -14,13 +10,13 @@
 }
 
 #logo{
-    margin-top: 0px;
     margin-left: 0px;
+    transition: 0.0s;
 }
 
 #flex-container {
     text-align: center;
-    height: 135px;
+    height: 150px;
     transition: 0s;
 }
 
@@ -28,10 +24,9 @@
 #banner{
     display: block;
     background-color: white;
-    padding: 25px;
-    margin-top: 5px;
+    padding-top: 40px;
     box-shadow: 0px 0px 0px rgb(221, 221, 221);
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 #navbar ul{
@@ -44,6 +39,8 @@
     /* Removes any padding and margins */
     padding: 0px;
     margin: 0px;
+
+    margin-top: 15px;
 
     overflow: hidden;
 }
@@ -78,20 +75,20 @@
     position: absolute;
     display: block;
     height: 0.4em;
-    min-width: 0%;
-    background-color: var(--darkOrange);
-    margin-top: 10px;
+    width: 0px;
+    background-color: var(--softCyan);
+    margin-top: 14px;
     transition: all ease-in-out 250ms;
 }
 
 #navbar a:hover::after{
     /* Controls how long animated bar is */
-    min-width: 5%;
+    width: 75px;
 }
 
 #navbar a:hover{
     /* Changes the color of the text when hovered on */
-    color: var(--darkOrange);
+    color: var(--softCyan);
 }
 
 .list-container{
