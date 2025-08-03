@@ -12,8 +12,8 @@
 
         <!-- Title of Website's Tab-->
         <title>Varillas Precision Electronics</title>
-        <link rel="stylesheet" href="../styling/home.css">
-        <link rel="stylesheet" href="../styling/navBar.css">
+        <link rel="stylesheet" href="styling/home.css">
+        <link rel="stylesheet" href="styling/navBar.css">
 
         <!-- Website favicon -->
         <link rel="icon" type="image/png" href="VPE_FAVICON_Logo.png">
@@ -26,7 +26,7 @@
                 <!-- Logo -->
                 <div id="logo-container">
                     <a href="index.html" id="logo-link">
-                        <img src="../images/VPE_BIG_LOGO.png"
+                        <img src="images/VPE_BIG_LOGO.png"
                         height="150px"
                         id="logo"
                         alt="This is the Official Logo of Varillas Precision Electronics.">
@@ -35,7 +35,7 @@
 
                 <nav id="navbar"></nav>
                 <script>
-                    fetch('navBar.html')
+                    fetch('Pages/navBar.html')
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById('navbar').innerHTML = data;
@@ -50,7 +50,7 @@
             
         </main>
 
-        <script src="../scripts/navbarScroll.js"></script>
+        <script src="scripts/navbarScroll.js"></script>
 
         <!-- Contact info -->
         <hr>
