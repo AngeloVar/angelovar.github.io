@@ -1,0 +1,62 @@
+:root{
+    --darkBlue: #004aad;
+    --softCyan: #5de0e6;
+}
+#navbar ul{
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#navbar a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px 0;
+    display: inline-block;
+    text-align: center;
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    height: 4px;
+    width: 0;
+    background-color: var(--softCyan);
+    transition: width 250ms ease-in-out;
+    border-radius: 2px;
+}
+
+#navbar a:hover::after {
+    width: 100%;
+}
+
+#navbar a:hover {
+    color: var(--softCyan);
+}
+
+.list-container{
+    /* Centers Navigation Bar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 0px;
+    
+}
+
+.horizontal-list {
+    /* Makes Navigation Bar Horizontal */
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}

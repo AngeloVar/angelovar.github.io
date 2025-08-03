@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../styling/contact.css">
+  <link rel="stylesheet" href="../styling/navBar.css">
+</head>
+<body>
+
+  <nav id="navbar"></nav>
+  <script>
+      fetch('./navBar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+<main>
+  <div class="container">
+    <!--angelo@varillasprecisionelectronics.org-->
+    <h1>Contact Us</h1>
+    <form action="https://formsubmit.io/send/angelo@varillasprecisionelectronics.org" method="POST">
+      <input type="hidden" name="_redirect" value="thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="full_name" id="name" placeholder="First and last name" required>
+
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+
+      <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9+()\- ]{7,15}" title="Enter a valid phone number">
+
+      <select name="product_interest" id="product" required>
+        <option value="" disabled selected>-- Select a product --</option>
+        <option value="Transimpedance Amplifier (Standard)">Transimpedance Amplifier (Standard)</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</main>
+
+  <!-- Contact info -->
+  <hr>
+  <footer>
+      <div class="contact-info">
+          <p> <b>Contact Information </b>
+              <br>
+              <br>
+              <b>Phone:</b> (839) 268-9555
+              <br>
+              <b> Email:</b> sales@varillasprecisionelectronics.org
+              <br>
+          </p>
+      </div>
+  </footer>
+
+</body>
+</html>

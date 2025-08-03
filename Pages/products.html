@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="../styling/products.css">
+<section class="features"></section>
+<link rel="stylesheet" href="../styling/navBar.css">
+
+<div class="table-wrapper">
+    
+
+    <nav id="navbar"></nav>
+    <script>
+        fetch('./navBar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+    <h2>Precision Transimpedance Amplifiers</h2>
+
+    <!-- Each 'table-container' div is ONE product. Copy-paste and change values to add new products. Add <h2> titles to seperate categories of products between tables.-->
+    <div class="table-container">
+        <img src="../images/amplifier1.jpg" alt="Model A Amplifier" class="product-image">
+        <p>Lab-grade signal amplification for photodiodes, optical sensors</p>
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Voltage Noise</td>
+                <td>25 µV</td>
+            </tr>
+            <tr>
+                <td>Current Noise</td>
+                <td>2.71 nA</td>
+            </tr>
+            <tr>
+                <td>Supply Voltage</td>
+                <td>+5 V</td>
+            </tr>
+            <tr>
+                <td><a href="../datasheets/GPS-Systems.pdf" target="_blank" download>Download datasheet</a></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="table-container">
+        <img src="../images/amplifier2.jpg" alt="Model A Amplifier" class="product-image">
+        <p>Product 2</p>
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Voltage Noise</td>
+                <td>320 µV</td>
+            </tr>
+            <tr>
+                <td>Current Noise</td>
+                <td>5.52 nA</td>
+            </tr>
+            <tr>
+                <td>Supply Voltage</td>
+                <td>+6 V</td>
+            </tr>
+            <tr>
+                <td><a href="../datasheets/GPS-Systems.pdf" target="_blank" download>Download datasheet</a></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
